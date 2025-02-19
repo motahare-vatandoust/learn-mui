@@ -1,7 +1,8 @@
 import { Box } from "@mui/material";
+import Card from "./Card.jsx"
 
 const Feed = () => {
-    return <Box bgcolor="burlywood" flex={4} p={2}>Feed</Box>;
+    return <Box flex={4} p={2}><Card /></Box>;
   };
   
   export default Feed;

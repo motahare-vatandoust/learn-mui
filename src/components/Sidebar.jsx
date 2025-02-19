@@ -1,4 +1,4 @@
-import { AccountBox, Description, Diversity3, Drafts, Group, Home, Inbox, Settings, Store } from "@mui/icons-material";
+import { AccountBox, Description, Diversity3, Drafts, Group, Home, Inbox, ModeNight, Settings, Store } from "@mui/icons-material";
 import {
   Box,
   List,
@@ -6,6 +6,7 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Switch,
 } from "@mui/material";
 
 const Sidebar = () => {
@@ -72,6 +73,15 @@ const Sidebar = () => {
               <AccountBox />
             </ListItemIcon>
             <ListItemText primary="Profile" />
+          </ListItemButton>
+        </ListItem>
+
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#">
+            <ListItemIcon>
+              <ModeNight />
+            </ListItemIcon>
+            <Switch defaultChecked />
           </ListItemButton>
         </ListItem>
        

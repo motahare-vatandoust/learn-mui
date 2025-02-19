@@ -67,7 +67,7 @@ const Navbar = () => {
               width: 30,
               height: 30,
             }}
-            src="/public/random-girl.jpg"
+            src="/static/random-girl.jpg"
             onClick={(e) => setOpen(true)}
           />
         </Icons>
