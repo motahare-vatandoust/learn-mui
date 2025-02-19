@@ -1,5 +1,6 @@
 import { Avatar, AvatarGroup, Box, Typography } from "@mui/material";
 import LatestPhotos from "./LatestPhotos";
+import People from "./People"
 
 const Rightbar = () => {
   return (
@@ -15,7 +16,14 @@ const Rightbar = () => {
           <Avatar alt="Agnes Walker" src="/static/images/avatar/4.jpg" />
           <Avatar alt="Trevor Henderson" src="/static/images/avatar/5.jpg" />
         </AvatarGroup>
+        <Typography variant="h6" fontWeight={100}>
+        Latest Photos
+        </Typography>
         <LatestPhotos />
+        <Typography variant="h6" fontWeight={100}>
+          Latest Conversations
+        </Typography>
+        <People />
       </Box>
     </Box>
   );
