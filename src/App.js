@@ -1,23 +1,17 @@
-import { Button } from "@mui/material";
-import { styled } from "@mui/system";
-import SettingsIcon from '@mui/icons-material/Settings';
-
-const BlueButton = styled(Button)(({theme})=>({
-  backgroundColor: theme.palette.otherColor,
-  color: "#888",
-  margin: "5px",
-  "&:hover": {
-    backgroundColor: "lightblue"
-  }
-}));
+import Sidebar from "./components/Sidebar";
+import Feed from "./components/Feed";
+import Rightbar from "./components/Rightbar";
+import { Box, Stack } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      <Button variant="text">Text</Button>
-      <Button color="otherColor" startIcon={<SettingsIcon />} variant="contained">Contained</Button>
-      <BlueButton variant="contained">My unique button</BlueButton>
-    </div>
+    <Box>
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </Stack>
+    </Box>
   );
 }
 
